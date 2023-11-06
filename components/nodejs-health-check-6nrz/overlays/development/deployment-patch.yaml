@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-6nrz
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/bootstrap/rhtap-demo-fans-tenant/e2e-nodejs/nodejs-health-check-6nrz@sha256:d3687cfdf4967de596abd6124d873ffcdce9ee9be4184ceb25515ae767d14c2a
+        name: my-nodejs
+        resources: {}
+status: {}
